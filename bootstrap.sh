@@ -1,12 +1,12 @@
     #!/usr/bin/env bash
 
-    apt-get update
-    apt-get install -y apache2
-    apt-get install -y php7.0
-    apt-get install -y libapache2-mod-php
+    sudo apt-get update
+    sudo apt-get install -y apache2
+    sudo apt-get install -y php7.0
+    sudo apt-get install -y libapache2-mod-php
     if ! [ -L /var/www ]; then
-      rm -rf /var/www
-      ln -fs /vagrant /var/www
+      sudo rm -rf /var/www
+      sudo ln -fs /vagrant /var/www
     fi
 sudo mkdir /vagrant/virtualhosts
 sudo mkdir /vagrant/virtualhosts/default
